@@ -5,12 +5,12 @@ import './App.css';
 import Task_1 from './components/task_1';
 
 function App() {
- 
+
   return (
     <div>
-     
-          <Task_1 />
-      
+
+      <Task_1 />
+
     </div>
   );
 }

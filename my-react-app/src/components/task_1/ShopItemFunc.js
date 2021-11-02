@@ -1,11 +1,10 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import ShopModel from '../../models/ShopModel';
 
 
 function ShopItemFunc(props) {
-  const {item} = props;
+  const { item } = props;
 
   return (
     <div>
