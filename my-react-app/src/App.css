@@ -14,7 +14,12 @@ h2,
 h3 {
   margin: 0;
 }
-
+nav{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+}
 .container {
   display: -webkit-box;
   display: -webkit-flex;
