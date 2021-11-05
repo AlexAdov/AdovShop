@@ -1,34 +1,38 @@
-import React from 'react'
-import ShopItemFunc from './ShopItemFunc';
-import ShopItemClass from './ShopItemClass';
-
+import React, { useState } from "react";
+import ShopItemFunc from "./ShopItemFunc";
+import ShopItemClass from "./ShopItemClass";
 
 function Task_1() {
-  const item = {
-    brand: 'Tiger of Sweden',
-    title: 'Leonard coat',
-    description: 'Minimalistic coat in cotton-blend',
-    descriptionFull: 'Men\'s minimalistic overcoat in cotton-blend. Features a stand-up collar, concealed front closure and single back vent. Slim fit with clean, straight shape. Above-knee length.',
-    price: 399,
-    currency: '£'
-  }
-  return (
-    <div>
-      <div className="container">
-        <div className="background-element"></div>
-        <div className="highlight-window">
-          <div className='highlight-overlay'></div>
-        </div>
-        <div className="window">
-          <ShopItemClass item={item} />
-        </div>
-        <div className="window">
-          <ShopItemFunc item={item} />
-        </div>
-      </div>
+   const [task, setTask] = useState("class");
 
-    </div>
-  );
+   const handleClick = (e) => {
+      const task = e.currentTarget.dataset.name;
+      setTask(task);
+   };
+   return (
+      <div>
+         <nav Style={"margin-left:245px;"}>
+            <button data-name="class" onClick={handleClick}>
+               Классовый компонент
+            </button>
+            <button data-name="func" onClick={handleClick}>
+               Функциональный компонент
+            </button>
+         </nav>
+         <div className="cont">
+            {(() => {
+               switch (task) {
+                  case "class":
+                     return <ShopItemClass />;
+                  case "func":
+                     return <ShopItemFunc />;
+                  default:
+                     return <ShopItemClass />;
+               }
+            })()}
+         </div>
+      </div>
+   );
 }
 
 export default Task_1;
