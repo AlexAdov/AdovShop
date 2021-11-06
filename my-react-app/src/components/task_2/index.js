@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Portfolio from "./Portfolio";
-import Placement from "./Placement";
+import { Store } from "./Store";
 import DrDown from "./DrDown";
 
 function Task_2() {
@@ -19,9 +19,6 @@ function Task_2() {
             <button data-name="placement" onClick={handleClick}>
                Расположение
             </button>
-            <button data-name="drDown" onClick={handleClick}>
-               Выпадающий список
-            </button>
          </nav>
          <div className="cont">
             {(() => {
@@ -29,9 +26,7 @@ function Task_2() {
                   case "portfolio":
                      return <Portfolio />;
                   case "placement":
-                     return <Placement />;
-                  case "drDown":
-                     return <DrDown />;
+                     return <Store />;
                   default:
                      return null;
                }
