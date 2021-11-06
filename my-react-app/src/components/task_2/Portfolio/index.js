@@ -1,8 +1,8 @@
-import React from "react";
+import React, {Component} from "react";
 import { Toolbar } from "./Toolbar";
 import { ProjectList } from "./ProjectList";
 
-export class Portfolio extends React.Component {
+export class Portfolio extends Component {
     constructor(props){
         super(props);
         this.state = {
