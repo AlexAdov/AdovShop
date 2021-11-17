@@ -12,7 +12,7 @@ export class Portfolio extends Component {
   }
 
   projects = [{
-    img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/mon.jpg",
+
     category: "Business Cards"
   }, {
     img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/200.jpg",
@@ -97,3 +97,4 @@ export class Portfolio extends Component {
 }
 
 export default Portfolio;
+
