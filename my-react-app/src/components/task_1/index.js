@@ -11,7 +11,7 @@ function Task_1() {
    };
    return (
       <div>
-         <nav Style={"margin-left:245px;"}>
+         <nav className="nav2">
             <button data-name="class" onClick={handleClick}>
                Классовый компонент
             </button>

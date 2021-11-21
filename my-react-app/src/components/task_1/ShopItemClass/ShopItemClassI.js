@@ -8,7 +8,7 @@ class ShopItemClassI extends React.Component {
    }
 
    render() {
-      const { item } = this.props;
+      const {item} = this.props;
 
       return (
          <div>

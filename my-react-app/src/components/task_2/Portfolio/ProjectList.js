@@ -20,3 +20,6 @@ export function ProjectList(props) {
 ProjectList.propTypes = {
   projects: PropTypes.array.isRequired,
 };
+ProjectList.defaultProps = {
+   src: 'https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/mon.jpg',
+ };

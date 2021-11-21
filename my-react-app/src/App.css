@@ -383,7 +383,12 @@ button.selected {
    background: #555555;
    color: #fff;
 }
-
+.nav2{
+   margin-left: 245px;
+}
+.nav2 button{
+   background: rgb(115, 115, 115);
+}
 
 /* Store */
 .shopitem{
