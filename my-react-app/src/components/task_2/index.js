@@ -12,11 +12,10 @@ function Task_2() {
   };
   return (
     <div>
-      <nav Style={"margin-left:245px;"}>
+      <nav Style={"margin-top:45px;"}>
         <button data-name="portfolio" onClick={handleClick}>Портфолио</button>
         <button data-name="placement" onClick={handleClick}>Расположение</button>
       </nav>
-      <div className="cont">
         {(() => {
           switch (task) {
             case "portfolio":
@@ -27,7 +26,6 @@ function Task_2() {
               return null;
           }
         })()}
-      </div>
     </div>
   );
 }

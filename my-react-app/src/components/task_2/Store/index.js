@@ -63,6 +63,7 @@ export class Store extends Component {
   render() {
     return (
       <>
+        <div className="bl">
         <IconSwitch
           icon={this.state.view === "cards" ? "view_list" : "view_module"}
           onSwitch={this.toggleView}
@@ -72,6 +73,7 @@ export class Store extends Component {
         ) : (
           <ListView items={this.products} />
         )}
+        </div>
       </>
     );
   }

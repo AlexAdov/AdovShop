@@ -83,6 +83,7 @@ export class Portfolio extends Component {
   render() {
     return (
       <>
+        <div className="bl">
         <div className="toll_portf">
           <Toolbar
             filters={["All", "Websites", "Flayers", "Business Cards"]}
@@ -91,6 +92,7 @@ export class Portfolio extends Component {
           />
         </div>
         <ProjectList projects={this.filtered} />
+        </div>
       </>
     );
   }
