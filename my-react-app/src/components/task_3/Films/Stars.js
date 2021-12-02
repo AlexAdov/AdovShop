@@ -1,7 +1,26 @@
-import React, { Component } from "react";
-import { Star } from "./Srar";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Star from './Star';
+import { times, uniqueId } from 'lodash';
 
-
-export function Stars() {
-    return <ul className="card-body-stars u-clearfix"><li><Star /></li></ul>;
+const Stars = ({ count = 1 }) => {
+  if (count === 0) {
+    return null;
   }
+  console.log(times)
+  return (
+    <ul className='card-body-stars u-clearfix'>
+      {times(count, Number).map((item) => (
+        <li key={uniqueId('star_')}>
+          <Star />
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+Stars.propTypes = {
+  count: PropTypes.number.isRequired,
+};
+
+export default Stars;

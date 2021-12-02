@@ -371,7 +371,7 @@ button:hover {
   float: left;
 }
 .toll_portf {
-  padding:80em 15em 0em 15em;
+  padding: 0em 15em 0em 15em;
 }
 button {
   border-radius: 0;
@@ -596,4 +596,16 @@ h2 {
     height: 100%;
     overflow: auto;
   }
+}
+
+
+
+ul.card-body-stars {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+
+ul.card-body-stars li {
+  list-style-type: none;
 }
