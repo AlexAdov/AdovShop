@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import Portfolio from "./Portfolio";
-import { Store } from "./Store";
+import { Raiting } from "./Films";
+import { Shop } from "./Shop";
 
 
-function Task_2() {
+
+function Task_3() {
   const [task, setTask] = useState("portfolio");
 
   const handleClick = (e) => {
@@ -13,21 +14,23 @@ function Task_2() {
   return (
     <div>
       <nav className="nav2">
-        <button data-name="portfolio" onClick={handleClick}>Портфолио</button>
-        <button data-name="placement" onClick={handleClick}>Расположение</button>
+        <button data-name="portfolio" onClick={handleClick}>Рейтинг фильмов</button>
+        <button data-name="placement" onClick={handleClick}>Список предложений</button>
       </nav>
+      <div className="cont">
         {(() => {
           switch (task) {
             case "portfolio":
-              return <Portfolio />;
+              return <Raiting />;
             case "placement":
-              return <Store />;
+              return <Shop />;
             default:
               return null;
           }
         })()}
+      </div>
     </div>
   );
 }
 
-export default Task_2;
+export default Task_3;
