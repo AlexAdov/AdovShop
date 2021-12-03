@@ -3,7 +3,7 @@ import Stars from "./Stars";
 import { uniqueId } from "lodash";
 
 export function Raiting() {
-   const count = Math.floor(Math.random() * 5);
+   const count = Math.floor(Math.random() * 8);
 console.log(count)
    return (
       <>

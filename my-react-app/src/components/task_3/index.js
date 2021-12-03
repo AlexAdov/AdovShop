@@ -3,7 +3,7 @@ import { Raiting } from "./Films";
 import { Shop } from "./Shop";
 
 function Task_3() {
-   const [task, setTask] = useState("portfolio");
+   const [task, setTask] = useState("shop");
 
    const handleClick = (e) => {
       const task = e.currentTarget.dataset.name;

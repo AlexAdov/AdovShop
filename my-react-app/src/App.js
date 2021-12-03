@@ -6,7 +6,7 @@ import { Task_4 } from "./components/task_4";
 import Task_3 from "./components/task_3";
 
 function App() {
-  const [task, setTask] = useState("task2");
+  const [task, setTask] = useState("task3");
 
   const handleClick = (e) => {
     const task = e.currentTarget.dataset.name;

@@ -1,14 +1,11 @@
-import React, { Component } from "react";
+import Listing from './Listing';
+import data from './etsy';
 
 
-export class Shop extends Component {
-
-
-  render() {
-    return (
-      <>
-      
-      </>
-    );
-  }
+export function Shop() {
+  return (
+    <div className="bl listing">
+      <Listing items={data} />
+    </div>
+  );
 }
